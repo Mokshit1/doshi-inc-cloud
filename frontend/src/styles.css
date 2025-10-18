@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --primary: #FF3131; --muted: #8B8B8B }
+body{ @apply bg-white text-gray-800 }
+
+.logo-doshi{ font-family: 'Shrikhand', cursive; color: var(--primary); font-weight:700 }
+.logo-inc{ color: var(--muted); font-weight:600; margin-left:4px }
