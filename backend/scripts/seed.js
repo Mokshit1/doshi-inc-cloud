@@ -2,7 +2,8 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 const Product = require('../models/Product')
 const User = require('../models/User')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs');
+
 
 mongoose.connect(process.env.MONGO_URI).then(async ()=>{
   await Product.deleteMany({})
