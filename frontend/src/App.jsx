@@ -24,8 +24,10 @@ export default function App(){
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/dashboard" element={<Dashboard/>} />
-          <Route path="/admin/login" element={<AdminLogin/>} />
-          <Route path="/admin" element={<AdminPanel/>} />
+
+          {/* HIDDEN ADMIN PANEL */}
+          <Route path="/doshi-secure-admin/login" element={<AdminLogin />} />
+          <Route path="/doshi-secure-admin" element={<AdminPanel />} />
         </Routes>
       </main>
     </div>
